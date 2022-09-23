@@ -10,7 +10,12 @@
     <!--CSS persoanlizado-->
     <link rel="stylesheet" href="style.css">
     <script>
-      console.log("Saoko papi saoko");
+      console.log("Saoko papi saoko")
+      
+      function colorTitulo(){
+        console.log("pulsar botón de Generation");
+        document.getElementById("generation").style.color="blue";
+      }
     </script>
 </head>
 <body>
@@ -55,10 +60,10 @@
       <div class="container">
         <!--Description generation-->
         <div class="row">
-            <div>
-                <h1>Estar en Generation es interesante</h1>
+            <div class="col">
+                <h1>Estar en <span id="generation">Generation</span> es interesante</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, accusantium nemo totam recusandae nesciunt in quae hic labore aliquam ducimus rem aspernatur. Iste, possimus! Unde nihil necessitatibus ratione similique explicabo.</p>
-                <p><a href="http://mexico.generation.org" target="_blank" class="btn btn-success">Visita Generation</a></p>
+                <p onclick="colorTitulo()"><a href="#" target="#" class="btn btn-success">Visita Generation</a></p>
             </div>
         </div>
         <div class="row">
